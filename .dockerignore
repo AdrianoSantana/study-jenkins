@@ -1,0 +1,4 @@
+node_modules/
+cxpress_scheduler/
+.env
+.env.*

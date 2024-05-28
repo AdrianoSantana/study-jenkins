@@ -5,13 +5,13 @@ services:
     build:
       context: .
       dockerfile: ./docker/api/Dockerfile
-    container_name: api-server
-    command: sh -c "npm run debug"
+    container_name: jenkins-estudo-api
+    command: sh -c "npm run dev"
     ports:
       - ${PORT}:${PORT}
       - ${DEBUG_PORT}:${DEBUG_PORT}
     volumes:
-      - jenkins_estudo_app:/usr/app
+      - .:/usr/app
     links:
       - db
     depends_on:
