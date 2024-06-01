@@ -1,11 +1,10 @@
-import bodyParser from 'body-parser'
 import express from 'express'
-const fs = require("fs");
-import path from "path";
-import dotenv from "dotenv";
+import fs from "fs"
+import path from "path"
+import dotenv from "dotenv"
 
 if (fs.existsSync(path.resolve(__dirname, "../.env"))) {
-  dotenv.config();
+  dotenv.config()
 }
 
 const app = express()
