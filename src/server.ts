@@ -14,6 +14,6 @@ const app = express()
 app.get('/', (req, res) => res.send({ status: 'Ok' }))
 
 
-app.listen(process.env.PORT, () => { console.log(`Running on port ${process.env.PORT}`)})
+app.listen(process.env.PORT, () => { console.log(`Running --- port --- ${process.env.PORT}`)})
 
 export default app
